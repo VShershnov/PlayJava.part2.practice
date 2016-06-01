@@ -9,6 +9,8 @@ public class Tester {
 		BigFact n = new BigFact();
 		System.out.println("20! = " + n.ComputBigFact(20));
 
+		
+		
 	}
 
 }
