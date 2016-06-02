@@ -19,6 +19,17 @@ class CashFact extends BigFact{
 	
 	CashFact(){};
 	
+	public BigInteger ComputBigFact (int n){
+		if ( n >= 0 && n <= 20) {
+			if(counter < n)
+				if (n<=1){
+					cash[n] = BigInteger.valueOf(1);
+					return cash[n];
+				}
+				return BigInteger.valueOf(n).multiply(ComputBigFact(n-1));	//return n*factRec(n-1) типу BigInteger
+	}
+	
+	/*
 	public CashFact(int n){
 		if ( n >= 0 && n <= 20) {
 			if(counter < n)
@@ -31,7 +42,7 @@ class CashFact extends BigFact{
 		else System.out.println("Помилка. Вкажіть 0 >= n >= 20");
 		
 	};
-
+*/
 }	
 
 	
