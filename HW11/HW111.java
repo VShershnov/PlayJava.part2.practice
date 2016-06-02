@@ -13,7 +13,7 @@ import acm.util.RandomGenerator;
 /**
  * �������� ��� � �������� ������ �� ����� ��������� 3*3
  * 
- * @author Anton
+ * @author Vitaly
  *
  */
 public class HW111 extends GraphicsProgram {
