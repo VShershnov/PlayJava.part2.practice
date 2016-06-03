@@ -4,9 +4,11 @@ public class Manager {
 	public String name = "Джек";
 	
 	void feed (Enimal e){
-		if (e.isHungry())
-		System.out.println(this.toString() + " погодував " + e.toString());
-		else System.out.println(name + "?, " + e.toString() + " ще не голодний.");
+		if (e.isHungry()){
+			e.setPrice(e.getPrice()+10);
+			System.out.println(this.name + " погодував " + e.toString());
+		}
+		else System.out.println(name + ", " + e.toString() + " ще не голодний.");
 	};
 	
 	void sell (Enimal e){
@@ -32,7 +34,7 @@ public class Manager {
 
 	@Override
 	public String toString() {
-		return "Менеджер на імя " + name;
+		return "Менеджер " + name;
 	}
 	
 	
