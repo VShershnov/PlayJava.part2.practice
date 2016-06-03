@@ -11,7 +11,7 @@ import acm.program.GraphicsProgram;
 import acm.util.RandomGenerator;
 
 /**
- * �������� ��� � �������� ������ �� ����� ��������� 3*3
+ * Гра Хрестики-Нолики 3*3
  * 
  * @author Vitaly
  *
