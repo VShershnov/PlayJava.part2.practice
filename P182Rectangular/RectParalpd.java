@@ -39,20 +39,27 @@ public class RectParalpd {
 	}
 	
 	RectParalpd(int l, int w, int h){
-		emptyDataMsg(l, w, h);
 		high = h; 		length = l; 	wide = w;
+		if (high*wide*length<=0) 
+			emptyDataMsg(l, w, h);
 	}
 	
 	public int surface (int i){ // 1 - h+w; 2 - h+l; 3 - l+w
-		switch (i) {
-	    case 1: 
-		    return high*wide;
-		case 2: 
-			return high*length;
-		case 3:		    
-		default: 
-			return length*wide;
+		if (high*wide*length>0){
+			switch (i) {
+		    case 1: 
+			    return high*wide;
+			case 2: 
+				return high*length;
+			case 3:		    
+			default: 
+				return length*wide;
+			}
+		}
+		else { 
 			
+			emptyDataMsg(length, wide, high);
+			return 0;
 		}
 	}
 	
