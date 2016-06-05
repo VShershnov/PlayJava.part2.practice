@@ -8,13 +8,10 @@ public class Car {
 	
 	Wheel [] mWheels;
 	
-	public void startEngine (){
-		
-	}
+	public void startEngine (){}	
+	public void openDoors (){}
+	public void installWheels (){}
 	
-	public void openDoors (){
-		
-	}
 
 	@Override
 	public String toString() {

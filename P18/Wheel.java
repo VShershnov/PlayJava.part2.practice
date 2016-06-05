@@ -3,11 +3,11 @@ package part2.practice.P18;
 public class Wheel {
 	boolean wIsInstalled = false;
 	
-	public void open(){
+	public void install(){
 		wIsInstalled = true;
 	}
 	
-	public void close(){
+	public void deInstall(){
 		wIsInstalled = false;
 	}
 
