@@ -1,11 +1,8 @@
 package part2.practice.P20;
 
-public abstract class Car implements Vehicle, Washable {
-	
+public abstract class Auto implements Vehicle, Washable {
 	Engine mEngine;
-	
 	Door [] mDoors;
-	
 	Wheel [] mWheels;
 	
 	public abstract void startEngine ();	

@@ -1,8 +1,8 @@
 package part2.practice.P20;
 
-public class SportCar extends Car {
-	
-	SportCar () {
+public class SportAuto extends Auto {
+
+	SportAuto () {
 		mEngine = new Engine ();
 		
 		mDoors = new Door[2];
@@ -37,14 +37,15 @@ public class SportCar extends Car {
 
 	@Override
 	public String toString() {
-		String res = "SportCar: ";
+		String res = this.getClass().getSimpleName() + ": ";
 		res += super.toString();
 		return res;
 	}
-	
+
 	@Override
 	public void wash() {
 		System.out.println(this.getClass().getSimpleName() +" was washed");
 		
 	}
+	
 }
